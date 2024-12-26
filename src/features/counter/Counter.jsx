@@ -15,13 +15,13 @@ const Counter = () => {
   };
 
   return (
-    <section>
+    <section className='flex flex-col gap-y-[1rem]'>
       <p>{count}</p>
-      <div class='card'>
+      <div className='flex justify-center gap-x-[1rem]'>
         <button onClick={() => dispatch(increment())}>+</button>
         <button onClick={() => dispatch(decrement())}>-</button>
       </div>
-      <div class='card'>
+      <div className='flex gap-x-[1rem]'>
         <input
           type='text'
           value={incrementAmount}
